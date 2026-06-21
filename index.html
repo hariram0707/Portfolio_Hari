@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariram C | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Hariram C
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#" onclick="showSection('about')">About</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('projects')">Projects</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('skills')">Skills</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('education')">Education</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('certifications')">Certificates</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('contact')">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ABOUT -->
+
+    <section id="about" class="content-section">
+
+        <div class="hero">
+
+    <img src="/images/Hariprofile.jpg"
+     alt="Hariram C"
+     class="profile-pic">
+    <h1 class="hero-name">
+        Hariram C
+    </h1>
+
+
+            <div class="about-content">
+
+                <p>
+                    I am an enthusiastic IT professional with a strong interest in cloud computing and web development.
+                    I have completed projects including a Portfolio Website deployed on AWS,
+                    a Student Login and Registration Web Portal, and a Personal Health Record
+                    Management System.
+                </p>
+
+                <br>
+
+                <p>
+                    These projects helped me develop practical skills in HTML, CSS,
+                    JavaScript, AWS cloud services, database concepts, and software
+                    development.
+                </p>
+
+                <br>
+
+                <p>
+                    I enjoy learning new technologies and applying them to solve real-world
+                    problems. My goal is to build scalable and reliable applications while
+                    continuously improving my technical expertise.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects" class="content-section">
+
+        <h2 class="section-title">Projects</h2>
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+
+            <h3>Portfolio Website on AWS</h3>
+
+            <button onclick="toggleProject('project1')">
+                View Details
+            </button>
+
+            <div id="project1" class="project-details">
+
+                <h4>Abstract</h4>
+
+                <p>
+                    This project is a responsive personal portfolio website developed using
+                    HTML, CSS, and JavaScript and deployed on AWS cloud services.
+                    The website showcases my education, certifications, technical skills,
+                    and projects through a modern and user-friendly interface.
+                    The application follows responsive design principles to ensure
+                    accessibility across desktops, tablets, and mobile devices.
+                    Through this project, I gained practical experience in cloud deployment,
+                    website hosting, AWS services, and frontend development.
+                </p>
+
+                <h4>Future Enhancement</h4>
+
+                <p>
+                    Custom domain integration, visitor analytics dashboard,
+                    contact form functionality, improved animations,
+                    and automated deployment pipelines.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+
+            <h3>Student Login and Registration Web Portal</h3>
+
+            <button onclick="toggleProject('project2')">
+                View Details
+            </button>
+
+            <div id="project2" class="project-details">
+
+                <h4>Abstract</h4>
+
+                <p>
+                    The Student Login and Registration Web Portal is a frontend web
+                    application developed using HTML and CSS.
+                    The system allows students to register and log in through
+                    structured forms designed with a clean and responsive interface.
+                    The project focuses on user experience, form validation concepts,
+                    and web page design. It helped strengthen my frontend development
+                    skills and understanding of creating user-friendly web applications.
+                </p>
+
+                <h4>Future Enhancement</h4>
+
+                <p>
+                    Backend integration, database connectivity,
+                    password encryption, session management,
+                    and admin dashboard functionality.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+
+            <h3>Personal Health Record Management System</h3>
+
+            <button onclick="toggleProject('project3')">
+                View Details
+            </button>
+
+            <div id="project3" class="project-details">
+
+                <h4>Abstract</h4>
+
+                <p>
+                    The Personal Health Record Management System is a cloud-based
+                    application designed to securely manage patient health information.
+                    The project focuses on maintaining medical records, ensuring data
+                    accessibility, and improving healthcare information management.
+                    It demonstrates concepts related to cloud computing, secure data
+                    storage, and healthcare record organization.
+                </p>
+
+                <h4>Future Enhancement</h4>
+
+                <p>
+                    Role-based access control,
+                    appointment scheduling,
+                    doctor-patient communication,
+                    secure document sharing,
+                    and healthcare analytics.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="content-section">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skill-card" onclick="toggleSkill('frontend')">
+            Front End
+        </div>
+
+        <div id="frontend" class="skill-details">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+
+        <div class="skill-card" onclick="toggleSkill('backend')">
+            Back End
+        </div>
+
+        <div id="backend" class="skill-details">
+            <span>Python</span>
+            <span>Java</span>
+        </div>
+
+        <div class="skill-card" onclick="toggleSkill('cloud')">
+            Cloud Concepts
+        </div>
+
+        <div id="cloud" class="skill-details">
+            <span>AWS EC2</span>
+            <span>AWS S3</span>
+            <span>AWS IAM</span>
+            <span>AWS VPC</span>
+        </div>
+
+        <div class="skill-card" onclick="toggleSkill('database')">
+            Database
+        </div>
+
+        <div id="database" class="skill-details">
+            <span>MySQL</span>
+            <span>SQL</span>
+        </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+
+    <section id="education" class="content-section">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+
+            <p>Sindhi College, Chennai</p>
+
+            <p>Percentage: 80%</p>
+
+            <p>Aug 2022 - Jul 2025</p>
+
+        </div>
+
+        <div class="education-card">
+
+            <h3>Commerce with Computer Applications</h3>
+
+            <p>Sri Krishnaswamy Metric Hr Sec School</p>
+
+            <p>Percentage: 86%</p>
+
+            <p>Jun 2021 - Apr 2022</p>
+
+        </div>
+
+    </section>
+
+    <!-- CERTIFICATIONS -->
+
+    <section id="certifications" class="content-section">
+
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="certificate-card">
+            AWS Cloud Practitioner - Edubridge
+        </div>
+
+        <div class="certificate-card">
+            Journey to Cloud: Envisioning Your Solutions - IBM SkillsBuild
+        </div>
+
+        <div class="certificate-card">
+            MongoDB Admin Path (Self Managed) - SmartBridge
+        </div>
+
+        <div class="certificate-card">
+            Social Media Marketing Certification
+        </div>
+
+        <div class="certificate-card">
+            Web Designing Tools Training Program
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="content-section">
+
+        <h2 class="section-title">Contact</h2>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/hariram0707" target="_blank">
+                github.com/hariram0707
+            </a>
+        </p>
+
+        <br>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/hariramc" target="_blank">
+                linkedin.com/in/hariramc
+            </a>
+        </p>
+
+    </section>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

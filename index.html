@@ -11,53 +11,28 @@
 
 <body>
 
-    <!-- NAVBAR -->
+<nav class="navbar">
 
-    <nav class="navbar">
+    <div class="logo">
+        Hariram C
+    </div>
 
-        <div class="logo">
-            Hariram C
-        </div>
+    <ul class="nav-links">
 
-        <ul class="nav-links">
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+        <li><a href="#" onclick="showSection('education')">Education</a></li>
+        <li><a href="#" onclick="showSection('certifications')">Certificates</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
 
-            <li>
-                <a href="#" onclick="showSection('about')">About</a>
-            </li>
+    </ul>
 
-            <li>
-                <a href="#" onclick="showSection('projects')">Projects</a>
-            </li>
+</nav>
+<section id="about" class="content-section">
+    <div class="hero">
 
-            <li>
-                <a href="#" onclick="showSection('skills')">Skills</a>
-            </li>
-
-            <li>
-                <a href="#" onclick="showSection('education')">Education</a>
-            </li>
-
-            <li>
-                <a href="#" onclick="showSection('certifications')">Certificates</a>
-            </li>
-
-            <li>
-                <a href="#" onclick="showSection('contact')">Contact</a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-    <!-- ABOUT -->
-
-    <section id="about" class="content-section">
-
-        <div class="hero">
-
-    <img src="images/Hariprofile.jpg"
-     alt="Hariram C"
-     class="profile-pic">
+    <img src="images/Hariprofile.jpg" alt="Hariram C" class="profile-pic">
     <h1 class="hero-name">
         Hariram C
     </h1>
@@ -321,29 +296,37 @@
 
     <!-- CONTACT -->
 
-    <section id="contact" class="content-section">
+   <section id="contact" class="content-section">
+    <h2>Contact Me</h2>
 
-        <h2 class="section-title">Contact</h2>
+    <div class="contact-container">
+        <p><strong>Email:</strong> 
+            <a href="mailto:hariram772004@gmail.com">hariram772004@gmail.com</a></p>
 
         <p>
-            GitHub:
+            <strong>GitHub:</strong>
             <a href="https://github.com/hariram0707" target="_blank">
                 github.com/hariram0707
             </a>
         </p>
 
-        <br>
-
         <p>
-            LinkedIn:
+            <strong> LinkedIn:</strong>
             <a href="https://www.linkedin.com/in/hariramc" target="_blank">
                 linkedin.com/in/hariramc
             </a>
         </p>
 
-    </section>
+        <p>
+            <strong> Phone:</strong>
+            <a href="tel:+919176931855">
+                +91 9176931855
+            </a>
+        </p>
+    </div>
+</section>
 
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

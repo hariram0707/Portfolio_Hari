@@ -1,17 +1,64 @@
-STEP BY STEP PROCESS FOR LAUCHING AN INSTANCE:
+# Personal Portfolio Website – AWS EC2 Deployment
 
-Go to AWS Console → EC2 → Launch Instance
-AMI: Amazon Linux (Free Tier)
-Instance Type: t2.micro
-Key Pair: Create (HARI.PEM)
-Security Group: Allow SSH (22) & HTTP (80)
-Launch the instance and copy the Public IPv4 address.
-2.CONNECT TO EC2: chmod 400 HARI.PEM ssh -i "HARI.PEM" ec2-user@ EX:192.15.21.16
+## Project Overview
 
-3.INSTALL HTTPD: sudo yum update -y sudo yum install httpd -y sudo systemctl start httpd sudo systemctl enable httpd
+This project involves developing a personal portfolio website using HTML, CSS, and JavaScript and deploying it on an AWS EC2 Linux instance. The website showcases my education, technical skills, internship experience, certifications, and projects.
 
-4.DEPLOY MY WEBSITE cd /var/www/html sudo rm -rf * sudo nano index.html ADDED MY PROTOFOLIO WEBSITE CODE
+## Technologies Used
 
-5.RESTART HTTPD: sudo systemctl restart httpd
+- HTML
+- CSS
+- JavaScript
+- AWS EC2
+- Linux
+- Apache Web Server
 
-6.VIEW MY WEBSITE: Visit http:// EX:192.15.21.16
+## Key Features
+
+- Personal introduction and profile.
+- Education and technical skills sections.
+- Internship and project details.
+- Certifications and contact information.
+- Responsive website design.
+
+## AWS Deployment Process
+
+1. Created an AWS EC2 Linux instance.
+2. Configured security group rules to allow web traffic.
+3. Connected to the EC2 instance.
+4. Installed and configured the Apache web server.
+5. Uploaded website files to the EC2 instance.
+6. Accessed the deployed website using the EC2 public IPv4 address.
+
+## Project Structure
+
+```text
+Portfolio_Hari/
+│
+├── index.html
+├── style.css
+├── script.js
+└── HariramPhoto.jpeg
+```
+
+## How to Run Locally
+
+1. Clone the repository.
+2. Open the project folder.
+3. Open `index.html` in your web browser.
+
+## Project Objective
+
+To develop a professional personal portfolio website and gain practical experience in deploying and hosting a static website using AWS cloud infrastructure.
+
+## Skills Gained
+
+- AWS EC2 instance configuration.
+- Linux server basics.
+- Apache web server setup.
+- Security group configuration.
+- Static website hosting and deployment.
+
+## Author
+
+**Hariram C**
